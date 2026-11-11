@@ -509,5 +509,17 @@
   });
 </script>
 <script async src="https://www.instagram.com/embed.js"></script>
+<!-- GoatCounter: estadística sin cookies. ?ref=codigo identifica la visita desde la campaña de correos -->
+<script>
+  (function () {
+    var ref = (new URLSearchParams(location.search).get('ref') || '').replace(/[^a-z0-9-]/gi, '');
+    var suf = ref ? '-' + ref : '';
+    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(function (a) { a.setAttribute('data-goatcounter-click', 'whatsapp' + suf); });
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function (a) { a.setAttribute('data-goatcounter-click', 'correo' + suf); });
+    document.querySelectorAll('a[href$=".pdf"]').forEach(function (a) { a.setAttribute('data-goatcounter-click', 'brochure' + suf); });
+  })();
+</script>
+<script>window.goatcounter = { path: function (p) { return location.host + p } };</script>
+<script data-goatcounter="https://sonofrecuencia.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
